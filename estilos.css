@@ -1,0 +1,329 @@
+
+
+/* COLOR DE FONDO ANIMADO*/
+
+
+:root {
+  --gradient: linear-gradient(-45deg,white, red,black,red,white );
+}
+    /*cuerpo*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Baloo 2';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    
+    min-height: 100vh;
+        background-image:url('https://i.ibb.co/JzdkvNg/666.jpg');
+    background-size: 10%; 
+ 
+/*  background:black;*/
+    flex-wrap: wrap;
+}
+/*contenedor principal*/
+.card {
+
+border: 1px solid red;
+   
+    Background-color:BLACK;
+   
+    box-shadow:red -10px 10px 30px,red 10px -10px 30px ;
+
+
+    position: relative;
+    width: 400px;
+  /*  height: 900px;*/
+    border-radius: 5px;
+    overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 30s infinite;
+          animation: bg-animation 30s infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+
+
+}
+
+.card:hover {
+    box-shadow: 0 5px 10px rgba(0,0,0,1);
+    transform: translateY(-20px);
+}
+
+/*
+
+.text-animation 
+{
+        position:relative ;
+    
+    left:px;
+    top:px ;
+    
+    width:;
+    
+    margin: 0 auto;
+    
+    border-right: 2px solid aqua;
+    
+    font-size: 60px;
+    Color:white;
+    
+    text-shadow:red -2px 3px ;
+    
+    text-align: center ;
+    
+    white-space: nowrap ;
+    
+    overflow: hidden ; 
+    
+  /*  transform: translateY (-50%);
+        animation:typewriter 5s steps(50)infinite,
+    
+    blinkTextCursor 500ms steps(40)     infinite normal;
+}
+
+ 
+@keyframes typewriter 
+{
+    from 
+{
+        width: 0;
+    }
+    
+to {
+        width:300px ;
+    }
+}
+
+@keyframes blinkTextCursor 
+{
+    from {
+        border-right-color:red;
+    }
+    
+to {
+        border-right-color: transparent ;
+    }
+}
+*/
+
+/*contenedor del texto*/
+.card .description {
+width: 100%;
+  /*  height: 200px;*/
+    
+ 
+    text-align: center;
+}
+
+
+H2,A{
+    animation: animate 20s infinite linear;
+    text-shadow: -1px 1px white;
+    font-size: 50px;
+}
+
+
+@keyframes animate
+
+{
+
+    0%,100%{
+
+        color: white;
+
+    }
+
+    25%{
+
+        color: deeppink;
+
+    }
+
+    50%{
+
+        color:deepskyblue;
+
+    }
+
+    75%{
+
+        color: black;
+
+    }
+
+}
+
+
+
+
+/*MENU DE ENLACES*/
+
+ .menu li{
+  display: inline-block;
+  text-align:center; 
+  Position:center; 
+}
+
+.menu li a{
+  display: flex;
+  flex-direction:column;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 1px;
+  width: 200px;
+  height: 50px;
+  
+  
+  font-size: 30px;
+  border-radius: 100px;
+  border: 1px white solid;
+  
+    box-shadow:0px 0px 10px 5px white;
+                  0px 0px 10px 5px purple;
+                  
+                  
+                  
+         Margin:10px 0px;   }
+         
+         
+div.shape {
+position: relative;
+Left:140px;
+    width: 60px;
+    height: 50px;
+    font-size:30px;
+    Align-items:center;
+    -webkit-animation-name: shape;   
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-name: shape;   
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes shape {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes shape {
+     
+    0%{ transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 
+
+table {
+  border-collapse: collapse;
+  width: 100px;
+  height: 100%;
+  
+  
+  background-image:url('https://i.ibb.co/JzdkvNg/666.jpg');
+  no-repeat;
+  background-size: 100%;
+  font-weight:bold;
+  
+  
+ 
+}
+
+th, td {
+  border: 1px solid black;
+  padding:0px;
+  text-align: center;
+}
+
+th {
+ background-color: #f0f0f0;
+ opacity: 0.8;
+}
+
+td {
+background-color: #fff;
+opacity: 0.8;
+  font-size: 10px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  opacity: 0.8;
+  
+/* background-image:url('https://i.ibb.co/JzdkvNg/666.jpg');*/
+  
+.calendario {
+
+position: absolute;
+
+left: 0%;
+
+top: 1px;
+
+background: black;
+
+float: left;
+
+border: 1px red solid;
+
+box-shadow: red 1px 1px 5px,
+
+red 1px 1px 5px;
+
+border-radius: 5px;
+
+width: 300px;
+
+max-height: 500px;
+
+padding: 0px;
+
+margin: 1px;
+
+overflow-x: auto;
+
+overflow-y: auto;
+
+word-break: break-all;
+
+}
+
+
+ 
+
+
+
