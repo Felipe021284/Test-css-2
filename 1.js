@@ -7,7 +7,7 @@ window.addEventListener("load", function () {
       
         {
           
-          
+          image: "https://i.ibb.co/M5hgj2q/tarjeta-basica.jpg",
           testimonial:
             " <a href=tema 1>¡Bienvenido a JavaScript!</a>",
         },
