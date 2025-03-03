@@ -65,7 +65,7 @@ window.addEventListener("load", function () {
       let displayTestimonial = () => {
         testimonialContainer.innerHTML = `
         <p>${testimonials[i].testimonial}</p>
-       <!--img src=${testimonials[i].image}></img-->
+       <img src=${testimonials[i].image}></img>
         
         `;
       };
