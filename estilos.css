@@ -97,12 +97,14 @@ H1{
 }
 
 H2{
-    font-size: 29px;
+    font-size: 20px;
 }
 
 A{
     font-size: 30px;
-   
+}
+button{
+    font-size: 30px;
 }
 
 H1,H2,A,BUTTON{
@@ -158,20 +160,23 @@ H1,H2,A,BUTTON{
   flex-direction:column;
   color: white;
   text-decoration: none;
-  
   background-color: rgba(255,255, 255, .1);
+  
   padding: 1px;
-  width: 200px;
+  width: 100%;
   height: 50px;
   
   
  /* font-size: 30px;*/
   border-radius: 100px;
- border: 1px black solid;
   
-   box-shadow:0px 0px 10px 1px black;
-                  0px 0px 10px 5px purple;
-                  Margin:10px 0px;  }
+         border: 1px black solid;
+  
+    box-shadow:0px 0px 10px 5px black;
+                  0px 0px 10px 5px purple;        
+                  
+                  
+         Margin:10px 0px;   }
          
          
 div.shape {
@@ -216,28 +221,29 @@ table {
  
 }
 
+     
+
+
 /*botones*/
 
 .uno{
-        font-size: 1.8em;
+        font-size:1.8em;
      
         height: 2.2em;
         width: 2.2em;
-        position:absolute ;
-        left:5px;
+        position: absolute;
+        left:0px;
         margin:5px;
-        top: 2px;
-        bottom:0;
+        top: 200px;
+        bottom: 0;
         background-color: rgba(255,255, 255, .1);
-        ;
-       /* border: none;*/
-        border-radius: 50%;
         border: 1px black solid;
-  
-   box-shadow:0px 0px 10px 1px black;
+        border-radius: 50%;
+        box-shadow:0px 0px 10px 5px black;
                   0px 0px 10px 5px purple;
-                  Margin:10px 0px;
-       /* -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+     /*   border: none;*/
+        
+      /*  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
                 box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);*/
         cursor: pointer;
       }
@@ -247,20 +253,20 @@ table {
         height: 2.2em;
         width: 2.2em;
         position: absolute;
-        right:5px;
-        margin:10px;
-        top: 0px;
+        right:0px;
+        margin:5px;
+        top: 200px;
         bottom: 0;
         background-color: rgba(255,255, 255, .1);
-        ;
-      /*  border: none;*/
         border: 1px black solid;
-  
-   box-shadow:0px 0px 10px 1px black;
-                  0px 0px 10px 5px purple;
-                  Margin:10px 0px;
         border-radius: 50%;
-     /*   -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+        box-shadow:0px 0px 10px 5px black;
+                  0px 0px 10px 5px purple;
+        
+        
+        /*border: none;
+        border-radius: 50%;
+        -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
                 box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);*/
         cursor: pointer;
       }
@@ -292,7 +298,6 @@ table tr:nth-child(even) {
 
 /*diseño de botton uno*/
       
-     
       
       
 
