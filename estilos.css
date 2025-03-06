@@ -7,14 +7,15 @@
 
 /*cuerpo*/
 
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Baloo 2';
 }
 
-body {
+body
+{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,6 +24,7 @@ body {
     flex-wrap: wrap;
 }
 /*contenedor principal*/
+
 .card {
     position: relative;
     width: 350px;
@@ -30,7 +32,7 @@ body {
     border-radius: 5px;
     overflow: hidden;
     transition: .5s;
-    margin: 15px 20px;
+    margin: 15px 15px;
     
    min-height: 100%;
   background-size: 300%;
@@ -72,12 +74,15 @@ body {
     transform: translateY(-20px);
 }
 /*contenedor de imágen*/
+/*
 .card .head {
     height: 125px;
     width: 100%;
     position: relative;
 }
+*/
 
+/*
 .card .head .circle {
     position: absolute;
     width: 350px;
@@ -87,7 +92,8 @@ body {
     bottom:0;
    
 }
-
+*/
+/*
 .card .head .img {
     width: 150px;
     height: 150px;
@@ -110,6 +116,7 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
+*/
 /*
 Img:hover {
     
@@ -125,14 +132,15 @@ background-image: var(--gradiente);
 
 
 /*contenedor del texto*/
+
 .card .description {
     height: 620px;
-    padding: 40px 20px 20px 20px;
+   padding: 40px 20px 20px 20px;
     border-bottom: white solid 1px ;
-    text-align: center;
+   text-align: center;
 }
 
-.card .description h2,h4,p,i,a,button{
+.card .description, h1,h2,h2,h4,p,i,a,button{
 animation: animate 10s infinite linear;
 }
 @keyframes animate
@@ -151,9 +159,17 @@ animation: animate 10s infinite linear;
     }
 }
 
+h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+
+
 
 
 /*contenedor de redes sociales*/
+
 
 .card .contact {
     width: 100%;
