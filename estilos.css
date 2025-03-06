@@ -20,8 +20,9 @@ body
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background:black;
-    flex-wrap: wrap;
+    background-image:url('https://i.ibb.co/JzdkvNg/666.jpg');
+    background-size: 10%; 
+  flex-wrap: wrap;
 }
 /*contenedor principal*/
 
@@ -494,3 +495,4 @@ background-image: var(--gradiente);
         }
       }
 
+         
