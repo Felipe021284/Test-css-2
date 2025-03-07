@@ -32,8 +32,9 @@ body
 .card {
 
 border: 1px solid red;
+
    
-    Background-color:BLACK;
+    
    
     box-shadow:red -10px 10px 30px,red 10px -10px 30px ;
 
@@ -42,7 +43,7 @@ border: 1px solid red;
     width: 400px;
   /*  height: 900px;*/
     border-radius: 5px;
-    overflow: hidden;
+   overflow: hidden;
     transition: .5s;
     margin: 15px 20px;
     min-height: 100%;
@@ -113,7 +114,16 @@ animation: animate 10s infinite linear;
     }
 }
 
+
+h1,h2.text-animation {
+
+position: relative;
+
+top: -100px; /* ajusta el
+
+valor según sea necesario */}
 h1{
+
     font-size: 60px;
     text-align: center;
 }
@@ -271,7 +281,7 @@ background-image: var(--gradiente);
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-        top: 68%;
+        top: 66%;
         left: 50%;
         width: 80vw;
         max-width: 41em;
