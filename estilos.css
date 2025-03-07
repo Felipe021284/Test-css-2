@@ -281,7 +281,7 @@ background-image: var(--gradiente);
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-        top: 66%;
+        top: 51%;
         left: 50%;
         width: 80vw;
         max-width: 41em;
@@ -398,8 +398,8 @@ background-image: var(--gradiente);
         position: absolute;
         left:0px;
         margin: auto;
-        top: 0;
-        bottom: 0;
+        top: 0px;
+        bottom: 0px;
         background-color: rgba(255,255, 255, .1);
         ;
         border: none;
@@ -429,11 +429,11 @@ background-image: var(--gradiente);
       
       
       button#next {
-         top:50px;
+         top:-150px;
         
       }
       button#prev {
-        top:50px;
+        top:-150px;
         
       
       a {
