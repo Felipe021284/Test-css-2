@@ -222,8 +222,6 @@ background-image: var(--gradiente);
 }
 
 
-
-
 /*slider*/
 
     #loader {
@@ -235,7 +233,7 @@ background-image: var(--gradiente);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 10%;
+        top: 50%;
         display: -ms-grid;
         display: grid;
         place-items: center;
@@ -273,7 +271,7 @@ background-image: var(--gradiente);
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-        top: 64%;
+        top: 68%;
         left: 50%;
         width: 80vw;
         max-width: 41em;
@@ -287,9 +285,7 @@ background-image: var(--gradiente);
         height: 1px;
         width: 1px;
       }
-      
-      /*ubicacion del botton uno*/
-     .uno {
+      .uno {
         background-color: rgba(255,255, 255, .1);
         ;
         position: relative;
@@ -301,9 +297,6 @@ background-image: var(--gradiente);
                 box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
       }
       
-      
-      /*ubicacion del botton d0s*/
-     
        .dos {
         background-color: rgba(255,255, 255, .1);
         ;
@@ -315,9 +308,8 @@ background-image: var(--gradiente);
         -webkit-box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
                 box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
       }
-    
       
-   */   
+      
        .wrapper{
         background-color: rgba(255,255, 255, .1);
         ;
@@ -349,14 +341,10 @@ background-image: var(--gradiente);
       }
       .testimonial-container img {
         display: block;
-        position: relative;
-        
-      /*  margin: 1.8em auto 1.25em auto;*/
-      /*  margin: 1.8em auto 1.25em auto;*/
-       /* border-radius: 5%;*/
-        width:300px;
+        margin: 1.8em auto 1.25em auto;
+        border-radius: 5%;
+        width:200px;
         height:250px;
-        left:-45px;
       }
       .testimonial-container h1,h2,h3 {
         
@@ -390,12 +378,9 @@ background-image: var(--gradiente);
         font-weight: 400;
         text-align: center;
       }
-      
-      /*diseño de botton uno*/
-      
-     .uno button  {
+      .uno button  {
         font-size: 1.8em;
-     
+       /* color: #0a69ed;*/
         height: 2.2em;
         width: 2.2em;
         position: absolute;
@@ -411,12 +396,9 @@ background-image: var(--gradiente);
                 box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
         cursor: pointer;
       }
-      
-      
-      /* diseño de botton dos*/
-      
-       .dos button  {
+        .dos button  {
         font-size: 1.8em;
+       /* color: #0a69ed;*/
         height: 2.2em;
         width: 2.2em;
         position: absolute;
@@ -432,7 +414,6 @@ background-image: var(--gradiente);
                 box-shadow: 0 0 1em rgba(0, 0, 0, 0.25);
         cursor: pointer;
       }
-      
       
       
       button#next {
@@ -461,4 +442,8 @@ background-image: var(--gradiente);
           font-size: 14px;
         }
       }
+
+
+
+
 
