@@ -28,57 +28,6 @@ body
 }
 /*contenedor principal original*/
 
-/*
-.card {
-    position: relative;
-    width: 350px;
-    height: 810px;
-    border-radius: 5px;
-    overflow: hidden;
-    transition: .5s;
-    margin: 15px 15px;
-    
-   min-height: 100%;
-  background-size: 300%;
-  background-image: var(--gradient);
-  -webkit-animation: bg-animation 10s infinite;
-          animation: bg-animation 10s infinite;
-}
-
-@-webkit-keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-
-
-}
-
-
-
-.card:hover {
-    box-shadow: 0 5px 10px rgba(0,0,0,1);
-    transform: translateY(-20px);
-}
-
-*/
 
 .card {
 
@@ -141,7 +90,7 @@ border: 1px solid red;
 .card .description {
     height: 620px;
    padding: 40px 20px 20px 20px;
-    border-bottom: white solid 1px ;
+   /* border-bottom: white solid 1px ;*/
    text-align: center;
 }
 
@@ -171,6 +120,11 @@ h1{
 
 h2{
     font-size: 17px;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
     text-align: center;
 }
 
@@ -281,7 +235,7 @@ background-image: var(--gradiente);
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         left: 50%;
-        top: 50%;
+        top: 10%;
         display: -ms-grid;
         display: grid;
         place-items: center;
@@ -319,7 +273,7 @@ background-image: var(--gradiente);
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-        top: 68%;
+        top: 64%;
         left: 50%;
         width: 80vw;
         max-width: 41em;
