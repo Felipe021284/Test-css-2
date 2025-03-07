@@ -349,10 +349,14 @@ background-image: var(--gradiente);
       }
       .testimonial-container img {
         display: block;
-        margin: 1.8em auto 1.25em auto;
-        border-radius: 5%;
-        width:200px;
+        position: relative;
+        
+      /*  margin: 1.8em auto 1.25em auto;*/
+      /*  margin: 1.8em auto 1.25em auto;*/
+       /* border-radius: 5%;*/
+        width:300px;
         height:250px;
+        left:-45px;
       }
       .testimonial-container h1,h2,h3 {
         
