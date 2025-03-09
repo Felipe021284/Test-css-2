@@ -89,7 +89,7 @@ border: 1px solid red;
 /*contenedor del texto*/
 
 .card .description {
-    height: 620px;
+    height: 450px;
    padding: 40px 20px 20px 20px;
    /* border-bottom: white solid 1px ;*/
    text-align: center;
@@ -136,6 +136,11 @@ h2{
 h3{
     font-size: 40px;
     text-align: center;
+}
+a{
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
 }
 
 
@@ -231,6 +236,35 @@ background-image: var(--gradiente);
   }
 }
 
+li {
+position:absolute ;
+left:40px;
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction:column;
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px;
+  width: 200px;
+  height: 50px;
+  
+  
+  
+ /* font-size: 30px;*/
+  border-radius: 100px;
+  border: 1px white solid;
+  
+    box-shadow:0px 0px 10px 5px white;
+                  0px 0px 10px 5px purple;
+                  
+                  
+                  
+         Margin:10px 0px;   }
+         
+
 
 /*slider*/
 
@@ -281,7 +315,7 @@ background-image: var(--gradiente);
         -webkit-transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%);
-        top: 51%;
+        top: 65%;
         left: 50%;
         width: 80vw;
         max-width: 41em;
@@ -436,25 +470,7 @@ background-image: var(--gradiente);
         top:-150px;
         
       
-      a {
-        position: relative;
-        display: block;
-     /*   background-color: #ffffff;*/
-        color: #0a69ed;
-        text-decoration: none;
-       /* font-size: 1.2em;*/
-        font-weight: 600;
-        text-align: center;
-        padding: 0.9em 0;
-        border-radius: 0.3em;
-        margin-top: 30px;
-      }
-      @media screen and (max-width: 650px) {
-        .wrapper {
-          font-size: 14px;
-        }
-      }
-
+      
 
 
 
