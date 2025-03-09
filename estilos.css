@@ -238,7 +238,8 @@ background-image: var(--gradiente);
 
 li {
 position:absolute ;
-left:40px;
+
+left:50px;
 
   align-items: center;
   justify-content: center;
@@ -475,3 +476,4 @@ left:40px;
 
 
 
+        
