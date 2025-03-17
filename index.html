@@ -1,200 +1,49 @@
 <!DOCTYPE html>
+<!--creado por Felipe Jiménez-->
 <html>
     <head>
-        <title>SLIDER JAVASCRIPT</title>
+        <title>SERVICIOS</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible"content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="stylesheet"type="text/css"
-href="estilos.css">
+href="estilos1.css">
+
 
     </head>
-    <body>
-     
-    <div class="card">
-        
-         <h1 class="text-animation"><br /> GRUPO 1</h1>
-         <h2 class="text-animation">
-          JAIME SALVADOR CARDENAS HERNANDEZ <br />
-
-CARMEN EVELIA  MENDEZ RUBIO <br />
- 
-        <div class="description">
-           <div class="uno">
-            <button id="prev" onclick="prev()">&lt;</button>
-        
-        </div>
-        
-        <div class="dos">
-        
-        <button id="next" onclick="next()">&gt;</button>
-        </div>
+    <body >
+    <div 
+    
+    class="card">
+        <div class="head">
+            <div class="circle"></div>
             
         </div>
+            
         
-        <!-- inicio del slider -->
-        <div id="loader"></div>
-    <div id="box">
-      <div class="img-con">
+        <div class="description">
+           
+            <h2 class="text-animation">ROLES <br /> DE  GUARDIAS</h2>
+            
+            <div class="loader"
+    >
+        <ul class="menu">
+    <li>
+      <a href="SERVICIOS.HTML">SERVICIOS</a>
+   </li>
+    
+    
+    
+    </ul>
+    </div>
+        </div>     
+    </div>
         
-      </div>
-      <div class="wrapper">
-        <div class="testimonial-container" id="testimonial-container">
-          <div id="testimonial1" class="active">
-            <img src="" />
-          </div>
-        </div>
-        
-      </div>
-      <script
-
-src="index.js"></script>
-
-<script>
-      window.addEventListener("load", function () {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("box").style.display = "block";
-      });
-      const testimonials = [
-        {
-          
-          image: "https://i.ibb.co/Qj961PKD/enero-1.jpg",
-          testimonial:
-            "<h3>ENERO</h3>",
-        },
-        {
-          
-          image: "https://i.ibb.co/4nbyqG46/IMG-20250307-060842.jpg",
-          testimonial:
-            " <h3>FEBRERO</h3>",
-        },
-        {
-          
-          image: "https://i.ibb.co/G6sDRkQ/marzo.jpg",
-          testimonial:
-            "<h3>MARZO</h3>",
-        },
-        
-        {
-          
-          image: "https://i.ibb.co/r251W0Lr/abril.jpg",
-          testimonial:
-            "<h3>ABRIL</h3>",
-        },
-        
-         {
-          
-          image: "https://i.ibb.co/TB4s4Mfj/IMG-20250309-144922.jpg",
-          testimonial:
-            "<h3>MAYO</h3>",
-        },
-        
-         {
-          
-          image: "https://i.ibb.co/JFp2GG93/JUNIO-1.jpg",
-          testimonial:
-            "<h3>JUNIO</h3>",
-        },
-        
-        {
-          
-          image: "https://i.ibb.co/twbqP1XB/julio-1.jpg",
-          testimonial:
-            "<h3>JULIO</h3>",
-        },
-        
-        
-        {
-          
-          image: "https://i.ibb.co/kVVbRsT0/agosto-1.jpg",
-          testimonial:
-            "<h3>AGOSTO</h3>",
-        },
-        
-        
-        {
-          
-          image: "https://i.ibb.co/8g0Ck2Sx/septiembre-1.jpg",
-          testimonial:
-            "<h3>SEPTIEMBRE</h3>",
-        },
-        
-        
-           {
-          
-          image: "https://i.ibb.co/6cH5XDDj/octubre-1.jpg",
-          testimonial:
-            "<h3>OCTUBRE</h3>",
-        },
-        
-        
-        
-           {
-          
-          image: "https://i.ibb.co/VY0QzNqd/noviembre-1.jpg",
-          testimonial:
-            "<h3>NOVIEMBRE</h3>",
-        },
-        
-        
-        
-           {
-          
-          image: "https://i.ibb.co/Xr8GhGfb/diciembre-1.jpg",
-          testimonial:
-            "<h3>DICIEMBRE</h3>",
-        },
-        
-        
-        
-        
-        
-       
-       
-      ];
-      let i = 0; // current slide
-      let j = testimonials.length; // total slides
-      let testimonialContainer = document.getElementById(
-        "testimonial-container"
-      );
-      function next() {
-        i = (j + i + 1) % j;
-        displayTestimonial();
-      }
-
-      function prev() {
-        i = (j + i - 1) % j;
-        displayTestimonial();
-      }
-      let displayTestimonial = () => {
-        testimonialContainer.innerHTML = `
-        <p>${testimonials[i].testimonial}</p>
-         <img src=${testimonials[i].image}></img>
-        
-        `;
-      };
-      window.onload = displayTestimonial;
-    </script>
-  <div style="position: fixed;
-
-bottom: 0; left: 50%;
-
-transform: translateX(-50%);
-
-text-align: center;">
-
-<a href="index.html">INICIO</a>
-
-</div>
-  </body>
-    </html>
-        
+    </body>
+</html>
