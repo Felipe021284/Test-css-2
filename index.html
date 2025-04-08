@@ -1,49 +1,147 @@
 <!DOCTYPE html>
-<!--creado por Felipe Jiménez-->
 <html>
     <head>
-        <title>SERVICIOS</title>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible"content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Mukta:wght@800&display=swap" rel="stylesheet">
+    <style>
+        
+.slider-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  transition: transform 0.5s ease-in-out;
+}
 
-<link rel="stylesheet"type="text/css"
-href="estilos1.css">
+.slider-item {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.slider-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
+.slider-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.prev-button, .next-button {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.prev-button:hover, .next-button:hover {
+  background-color: #ccc;
+}
+    </style>
+        <title>Page Title</title>
     </head>
-    <body >
-    <div 
-    
-    class="card">
-        <div class="head">
-            <div class="circle"></div>
-            
-        </div>
-            
-        
-        <div class="description">
-           
-            <h2 class="text-animation">ROLES <br /> DE  GUARDIAS</h2>
-            
-            <div class="loader"
-    >
-        <ul class="menu">
-    <li>
-      <a href="SERVICIOS.HTML">SERVICIOS</a>
-   </li>
-    
-    
-    
-    </ul>
+    <body>
+        <div class="slider-container">
+  <div class="slider">
+    <div class="slider-item active">
+    <h1>hola1</h1>
+      <img src="imagen1.jpg" alt="Imagen 1">
     </div>
-        </div>     
+    <div class="slider-item">
+    <h1>hola2</h1>
+      <img src="imagen2.jpg" alt="Imagen 2">
     </div>
-        
+    <div class="slider-item">
+    <h1>hola3</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+    </div>
+    <!-- Agrega más imágenes aquí -->
+  </div>
+  <div class="slider-controls">
+    <button class="prev-button">Anterior</button>
+    <button class="next-button">Siguiente</button>
+  </div>
+</div>
+<script>
+
+
+const slider = document.querySelector('.slider');
+const sliderItems = document.querySelectorAll('.slider-item');
+const prevButton = document.querySelector('.prev-button');
+const nextButton = document.querySelector('.next-button');
+
+let currentIndex = 0;
+let isDragging = false;
+let startX = 0;
+
+slider.addEventListener('touchstart', (e) => {
+  isDragging = true;
+  startX = e.touches[0].clientX;
+});
+
+slider.addEventListener('touchmove', (e) => {
+  if (isDragging) {
+    const currentX = e.touches[0].clientX;
+    const diffX = currentX - startX;
+    slider.style.transform = `translateX(${diffX}px)`;
+  }
+});
+
+slider.addEventListener('touchend', (e) => {
+  isDragging = false;
+  const currentX = e.changedTouches[0].clientX;
+  const diffX = currentX - startX;
+  if (diffX < -100) {
+    currentIndex++;
+    if (currentIndex >= sliderItems.length) {
+      currentIndex = 0;
+    }
+  } else if (diffX > 100) {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = sliderItems.length - 1;
+    }
+  }
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+/*
+prevButton.addEventListener('click', () => {
+  currentIndex--;
+  if (currentIndex < 0) {
+    currentIndex = sliderItems.length - 1;
+  }
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+
+nextButton.addEventListener('click', () => {
+  currentIndex++;
+  if (currentIndex >= sliderItems.length) {
+    currentIndex = 0;
+  }
+  slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+});
+*/
+
+    
+</script>
     </body>
 </html>
