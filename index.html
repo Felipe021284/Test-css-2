@@ -2,17 +2,173 @@
 <html>
     <head>
     <style>
-        
+    
+    /*ESTILO DE FONDO ANIMADO*/
+:root {
+  --gradient: linear-gradient(-45deg,white, red,black,red,white );
+}
+
+/*cuerpo*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo 2';
+}
+
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image:url('https://i.ibb.co/JzdkvNg/666.jpg');
+    background-size: 10%; 
+  flex-wrap: wrap;
+}
+
+/*texto*/
+h1,h2.text-animation {
+
+position: relative;
+
+top:-50px; /* ajusta el
+
+valor según sea necesario */}
+h1{
+
+    font-size: 60px;
+    text-align: center;
+}
+
+h2{
+    font-size: 17px;
+    text-align: center;
+}
+
+h3{
+    font-size: 40px;
+    text-align: center;
+}
+
+
+h1,h2,a{
+animation: animate 10s infinite linear;
+}
+@keyframes animate
+{
+    0%,100%{
+        color:aqua;
+    }
+    25%{
+        color: deeppink;
+    }
+    50%{
+        color:deepskyblue;
+    }
+    75%{
+        color: white;
+    }
+}
+
+
+a{
+
+    font-size: 30px;
+    position: relative;
+    top:500px;
+    left:100px;
+    
+  color: white;
+  text-decoration: none;
+ /* background-color: black;*/
+  padding: 10px;
+  width: 200px;
+  height: 100%;
+  border-radius: 100px;
+ /* border: 1px white solid;
+  
+    box-shadow:0px 0px 10px 5px white;
+                  0px 0px 10px 5px purple;*/
+                  background-color: rgba(255,255, 255, .1);
+        -webkit-box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+                box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.15);
+}
+/*contenedor padre*/
+.slider-container{
+
+border: 1px solid red;
+
+   
+    
+   
+    box-shadow:red -10px 10px 30px,red 10px -10px 30px ;
+
+
+    position: relative;
+    width: 400px;
+  height: 600px;
+    border-radius: 5px;
+   overflow: hidden;
+    transition: .5s;
+    margin: 15px 20px;
+    min-height: 100%;
+  background-size: 300%;
+  background-image: var(--gradient);
+  -webkit-animation: bg-animation 30s infinite;
+          animation: bg-animation 30s infinite;
+}
+
+@-webkit-keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+
+
+}
+/*
+
+.slider-container img {
+       /* display: block;
+        margin: 1.8em auto 1.25em auto;
+       /* border-radius: 5%;
+        width:9px;
+        height:5px;
+      }
+*/
+
+/*        
 .slider-container {
   position: relative;
-  width: 100%;
+  width: 300px;
   height: 200px;
   overflow: hidden;
 }
+*/
 
 .slider {
   position: absolute;
-  top: 0;
+  top:100px;
+  
   left: 0;
   width: 100%;
   height: 100%;
@@ -22,6 +178,7 @@
 }
 
 .slider-item {
+  
   width: 100%;
   height: 100%;
   flex-shrink: 0;
@@ -31,9 +188,17 @@
 }
 
 .slider-item img {
-  width: 100%;
-  height: 100%;
+
+display: block;
+       /* margin: 1.8em auto 1.25em auto;*/
+       /* border-radius: 5%;*/
+        width:250px;
+        height:250px;
+/*
+  width: 100px;
+  height: 100px;
   object-fit: cover;
+  */
 }
 
 .slider-controls {
@@ -59,27 +224,103 @@
         <title>Page Title</title>
     </head>
     <body>
+    
+    
         <div class="slider-container">
+        
+        
+        <!--a href="https://felipe021284.github.io/MI-TARJETA-/
+        ">INICIO</a-->
+        <div class="card">
+        <a href="https://felipe021284
+
+.github.io/MI-TARJETA-/"
+
+target="_blank">INICIO</a>
+        
+         <h1 class="text-animation"><br /> GRUPO 1</h1>
+         <h2 class="text-animation">
+          JAIME SALVADOR CARDENAS HERNANDEZ <br />
+
+CARMEN EVELIA  MENDEZ RUBIO <br />
+ </div>
+ 
   <div class="slider">
+  
     <div class="slider-item active">
-    <h1>hola1</h1>
-      <img src="imagen1.jpg" alt="Imagen 1">
+    <iframe src="https://i.ibb.co/MxgLxh18/IMG-20250320-230548.jpg
+    "></iframe>
     </div>
     <div class="slider-item">
-    <h1>hola2</h1>
-      <img src="imagen2.jpg" alt="Imagen 2">
+    <iframe src="https://felipe021284.github.io/Sektor/SERVICIOS.HTML
+    "></iframe>
     </div>
+   
     <div class="slider-item">
-    <h1>hola3</h1>
+    <h1>MARZO</h1>
       <img src="imagen3.jpg" alt="Imagen 3">
-    </div>
+</div>
+
+<div class="slider-item">
+    <h1>ABRIL</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+<div class="slider-item">
+    <h1>MAYO</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+<div class="slider-item">
+    <h1>JUNIO</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+
+<div class="slider-item">
+    <h1>JULIO</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+<div class="slider-item">
+    <h1>AGOSTO</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+<div class="slider-item">
+    <h1>SEPTIEMBRE</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+<div class="slider-item">
+    <h1>OCTUBRE</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+
+<div class="slider-item">
+    <h1>NOVIEMBRE</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
+<div class="slider-item">
+    <h1>DICIEMBRE</h1>
+      <img src="imagen3.jpg" alt="Imagen 3">
+</div>
+
     <!-- Agrega más imágenes aquí -->
   </div>
-  <div class="slider-controls">
+  <!--div class="slider-controls">
     <button class="prev-button">Anterior</button>
     <button class="next-button">Siguiente</button>
-  </div>
+  </div-->
+  
+  
+  
 </div>
+
+
+
 <script>
 
 
